@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
-//Sample data distribution
-data = [
+#Sample data distribution
+data = 
+[
     {"age": 22, "gender": "Male"},
     {"age": 11, "gender": "Female"},
     {"age": 35, "gender": "Male"},
@@ -22,7 +23,7 @@ data = [
     {"age": 25, "gender": "Female"}
 ]
 
-//Grouping the ages
+#Grouping the ages
 age_groups = {"0-18": 0, "19-50": 0, "50+": 0}
 age_groups_male = {"0-18": 0, "19-50": 0, "50+": 0}
 age_groups_female = {"0-18": 0, "19-50": 0, "50+": 0}
@@ -54,7 +55,7 @@ indices = np.arange(len(categories))
 plt.bar(indices, male_counts, bar_width, label='Male', color='skyblue', edgecolor='black')
 plt.bar(indices, female_counts, bar_width, bottom=male_counts, label='Female', color='lightpink', edgecolor='black')
 
-//title 
+#title 
 plt.title('Age Group Distribution by Gender', fontsize=15)
 plt.xlabel('Age Groups', fontsize=12)
 plt.ylabel('Count', fontsize=12)
